@@ -1,0 +1,79 @@
+{% extends 'basic.html' %}
+
+{% load static %}
+
+{% block head %}
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 20px;
+        padding: 0;
+    }
+    .container {
+        margin: 0px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+</style>
+{% endblock head %}
+
+{% block title %}
+About
+{% endblock title %}
+
+{% block aboutactive %} active {% endblock aboutactive %}
+{% block body %}
+<div class="container">
+    <h1>About Me</h1>
+    <h2>Welcome to My Insurance Services</h2>
+    <div>
+    <img src= "{% static 'Papa.png' %}" alt="LIC Agent" class="profile-image" style = "width:250px ; height:250px">
+    <p>Hello, I'm <strong>Pavan Malani</strong>, a dedicated and experienced LIC (Life Insurance Corporation) agent
+        based in the vibrant town of Balotra. With a passion for helping individuals and families secure their financial
+        future, I have been serving the community with comprehensive insurance solutions for over 25 years.</p>
+    </div>
+    <h2>My Mission</h2>
+    <p>My mission is to provide personalized insurance services that meet the unique needs and goals of each client.
+        Whether you're looking to secure your family's future, save for retirement, or invest in a better tomorrow, I am
+        here to guide you every step of the way.</p>
+
+    <h2>Why Choose Me?</h2>
+    <ul>
+        <li><strong>Experience</strong>: With 25 years of experience in the insurance industry, I possess the knowledge
+            and expertise to help you make informed decisions.
+        </li>
+        <strong style="color: #b52b3e;">अनुभव</strong>: <span style="color: #b52b3e;"> विमा उद्योग में 25 वर्षों के अनुभव के साथ, मेरे पास ज्ञान और विशेषज्ञता है जो आपको सूचित निर्णय लेने में मदद करेगी।</span>
+        <li><strong>Trustworthy Advice</strong>: I believe in building long-term relationships based on trust and
+            transparency. Your financial well-being is my top priority.
+        </li>
+        <strong style="color: #b52b3e;">विश्वसनीय सलाह</strong>: <span style="color: #b52b3e;"> मैं विश्वास और पारदर्शिता पर आधारित दीर्घकालिक संबंधों का निर्माण करने में विश्वास रखता हूँ। आपकी वित्तीय भलाई मेरी प्राथमिकता है।</span>
+        <li><strong>Customized Solutions</strong>: Understanding that each client is unique, I offer tailored insurance
+            plans to suit your specific needs and budget.
+        </li>
+        <strong style="color: #b52b3e;">विशेष योजनाएँ</strong>: <span style="color: #b52b3e;"> प्रत्येक ग्राहक अद्वितीय होता है, इसलिए मैं आपकी विशेष आवश्यकताओं और बजट के अनुसार विमा योजनाएँ अनुकूलित करता हूँ।</span>
+        <li><strong>Local Expertise</strong>: As a resident of Balotra, I am deeply familiar with the local community
+            and its unique requirements. This local insight allows me to provide more personalized and relevant advice.
+        </li>
+        <strong style="color: #b52b3e;">स्थानीय विशेषज्ञता:</strong>: <span style="color: #b52b3e;"> बालोतरा के निवासी के रूप में, मुझे स्थानीय समुदाय और उसकी विशेष आवश्यकताओं की गहरी जानकारी है। यह स्थानीय ज्ञान मुझे अधिक व्यक्तिगत और संबंधित सलाह प्रदान करने में मदद करता है।</span>
+    </ul>
+
+    <h2>Services Offered</h2>
+    <ul>
+        <li><strong>Life Insurance</strong>: Protect your family's financial future with our wide range of life
+            insurance policies.
+        </li>
+        <strong style="color: #b52b3e;">जीवन बीमा</strong>: <span style="color: #b52b3e;">हमारे विस्तृत जीवन बीमा पॉलिसियों की श्रृंखला के साथ अपने परिवार के वित्तीय भविष्य को सुरक्षित करें।</span>
+        <li><strong>Health Insurance</strong>: Ensure you and your loved ones have access to the best healthcare without financial worries.</li>
+        <strong style="color: #b52b3e;">स्वास्थ्य बीमा</strong>: <span style="color: #b52b3e;">सुनिश्चित करें कि आप और आपके प्रियजनों को बिना किसी आर्थिक चिंता के सबसे अच्छी स्वास्थ्य देखभाल मिले।</span>
+        <li><strong>Retirement Plans</strong>: Plan for a comfortable and secure retirement with our customized pension plans.</li>
+        <strong style="color: #b52b3e;">सेवानिवृत्ति योजनाएँ</strong>: <span style="color: #b52b3e;">हमारे अनुकूलित पेंशन योजनाओं के साथ आरामदायक और सुरक्षित सेवानिवृत्ति की योजना बनाएं।</span>
+        <li><strong>Investment Plans</strong>: Grow your wealth with our diverse investment options that cater to your financial goals.</li>
+        <strong style="color: #b52b3e;">निवेश योजनाएँ</strong>: <span style="color: #b52b3e;">अपने वित्तीय लक्ष्यों को पूरा करने के लिए हमारे विविध निवेश विकल्पों के साथ अपनी संपत्ति बढ़ाएं।</span>
+        <li><strong>Child Plans</strong>: Secure your child's future education and financial needs with our specially designed child insurance plans.</li>
+        <strong style="color: #b52b3e;">बच्चों की योजनाएँ</strong>: <span style="color: #b52b3e;">हमारे विशेष रूप से डिज़ाइन किए गए बाल बीमा योजनाओं के साथ अपने बच्चे की भविष्य की शिक्षा और वित्तीय आवश्यकताओं को सुरक्षित करें।</span>
+    </ul>
+</div>
+{% endblock body %}
+
+<img src= "{% static 'papa2.png' %}" alt="LIC Agent" class="profile-image" style = "width:500px ; height:auto">
