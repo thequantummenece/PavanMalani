@@ -12,6 +12,33 @@
     .carousel-control-next-icon {
         background-color: black; /* Change to desired color */
     }
+    .profile-image {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+}
+
+/* Adjust image size for larger screens */
+@media (min-width: 768px) {
+    .profile-image {
+        width: 50%;
+        max-width: 300px;
+    }
+}
+
+/* Further adjustments for very large screens */
+@media (min-width: 1200px) {
+    .profile-image {
+        width: 40%;
+        max-width: 350px;
+    }
+}
+
+/* Center images for smaller screens */
+.carousel-caption {
+    text-align: center;
+}
+
 
 </style>
 
@@ -36,24 +63,21 @@ Home
         <div class="carousel-item">
             <div class="container">
                 <div class="carousel-caption text-start">
-                    <img src="{% static 'papa3.png' %}" alt="LIC Agent" class="profile-image"
-                         style="width:250px ;height:100pxx">
+                    <img src="{% static 'papa3.png' %}" alt="LIC Agent" class="profile-image">
                 </div>
             </div>
         </div>
         <div class="carousel-item active">
             <div class="container">
                 <div class="carousel-caption">
-                    <img src="{% static 'papa4.jpg' %}" alt="LIC Agent" class="profile-image"
-                         style="width:200px ; height:100px">
+                    <img src="{% static 'papa4.jpg' %}" alt="LIC Agent" class="profile-image">
                 </div>
             </div>
         </div>
         <div class="carousel-item">
             <div class="container">
-                <div class="carousel-caption text-end">papa5.jpg
-                    <img src="{% static 'papa5.jpg' %}" alt="LIC Agent" class="profile-image"
-                         style="width:250px ; height:100px">
+                <div class="carousel-caption text-end">
+                    <img src="{% static 'papa5.jpg' %}" alt="LIC Agent" class="profile-image">
                 </div>
             </div>
         </div>
@@ -96,8 +120,10 @@ Home
             <p>Life Insurance Corporation of India is an Indian multinational Central Public sector life insurance
                 company headquartered in Mumbai. It is India's largest insurance company as well as the largest
                 institutional investor with total assets under management worth ₹52.52 trillion as of March 2024.</p>
-            <p><a class="btn btn-primary" href="https://ebiz.licindia.in/D2CPM/#Login" target="_blank">Open Portal »</a></p>
-            <p><a class="btn btn-primary" href="https://ebiz.licindia.in/D2CPM/#DirectPay" target="_blank">Direct Pay Premium »</a></p>
+            <p><a class="btn btn-primary" href="https://ebiz.licindia.in/D2CPM/#Login" target="_blank">Open Portal »</a>
+            </p>
+            <p><a class="btn btn-primary" href="https://ebiz.licindia.in/D2CPM/#DirectPay" target="_blank">Direct Pay
+                Premium »</a></p>
         </div>
         <!--/.col-lg-4 -->
         <div class="col-lg-4">
@@ -171,13 +197,16 @@ Home
                     premium paying life assurance policy with a combination of life protection and assured survival
                     benefits in the predetermined durations.
                 </li>
-                <strong style="color: #f7e307;">एलआईसी न्यू मनी बैक प्लान - 20 वर्ष</strong>: <span style="color: blue;">एलआईसी न्यू मनी बैक प्लान - 20 वर्ष सीमित है
+                <strong style="color: #f7e307;">एलआईसी न्यू मनी बैक प्लान - 20 वर्ष</strong>: <span
+                    style="color: blue;">एलआईसी न्यू मनी बैक प्लान - 20 वर्ष सीमित है
                     जीवन सुरक्षा और सुनिश्चित अस्तित्व के संयोजन के साथ प्रीमियम भुगतान वाली जीवन बीमा पॉलिसी
                     पूर्व निर्धारित अवधि में लाभ.</span>
 
             </ul>
-            <p><a class="btn btn-primary" href="https://ebiz.licindia.in/D2CPM/#Login" target="_blank">Open Portal »</a></p>
-            <p><a class="btn btn-primary" href="https://ebiz.licindia.in/D2CPM/#DirectPay" target="_blank">Direct Pay Premium »</a></p>
+            <p><a class="btn btn-primary" href="https://ebiz.licindia.in/D2CPM/#Login" target="_blank">Open Portal »</a>
+            </p>
+            <p><a class="btn btn-primary" href="https://ebiz.licindia.in/D2CPM/#DirectPay" target="_blank">Direct Pay
+                Premium »</a></p>
         </div>
         <div class="col-md-5 order-md-1">
             <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
